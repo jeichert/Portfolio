@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Broadway - Brooklyn, NY
+title: Broadway
 firm: JFA
 author: Jeffrey Eichert
 tags:

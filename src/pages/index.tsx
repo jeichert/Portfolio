@@ -126,20 +126,7 @@ const IndexPage : React.FunctionComponent < IndexProps > = props => {
         <header css={[outer, SiteHeader]} style={{}}>
           <div css={inner}>
             <SiteHeaderContent>
-              <SiteTitle>
-                {/*
-                {props.data.logo
-                  ? (<img
-                    style={{
-                    maxHeight: '45px'
-                  }}
-                    src={props.data.logo.childImageSharp.fixed.src}
-                    alt={config.title}/>)
-                  : (config.title)}
-                  */}
-                Jeffrey Eichert
-              </SiteTitle>
-
+              <SiteTitle>{config.title}</SiteTitle>
               <SiteDescription>{config.description}</SiteDescription>
             </SiteHeaderContent>
             <SiteNav isHome={true}/>
@@ -160,7 +147,6 @@ const IndexPage : React.FunctionComponent < IndexProps > = props => {
           </div>
         </main>
         {props.children}
-
         <Footer/>
       </Wrapper>
     </IndexLayout>
@@ -203,6 +189,13 @@ export const pageQuery = graphql `
             tags
             draft
             image {
+              childImageSharp {
+                fluid(maxWidth: 3720) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            gallery {
               childImageSharp {
                 fluid(maxWidth: 3720) {
                   ...GatsbyImageSharpFluid

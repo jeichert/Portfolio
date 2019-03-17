@@ -70,8 +70,8 @@ const Footer : React.FunctionComponent = () => {
     <footer css={[outer, SiteFooter]}>
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
-          <Link to="/">{config.title}</Link>
-          &copy; {new Date().getFullYear()}
+          <Link to="/">{config.title + ' '}</Link>
+          &copy;{new Date().getFullYear()}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Projects</Link>

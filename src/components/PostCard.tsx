@@ -14,8 +14,8 @@ const PostCardStyles = css `
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 0 20px 40px;
-  min-height: 300px;
+  margin: 0 1rem 2rem;
+  min-height: 400px;
   background: #fff center center;
   background-size: cover;
   border-radius: 5px;
@@ -38,7 +38,7 @@ const PostCardImageLink = css `
 
 const PostCardImage = styled.div `
   width: auto;
-  height: 200px;
+  height: 400px;
   background: ${colors.lightgrey} no-repeat center center;
   background-size: cover;
 `;
