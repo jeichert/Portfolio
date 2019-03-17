@@ -6,8 +6,6 @@ author: Jeffrey Eichert
 tags:
   - Mixed-Use
   - Multi-family
-  - Architecture
-  - Professional
 image: img/broadway/broadway_0.jpg
 gallery:
   - img/broadway/broadway_0.jpg

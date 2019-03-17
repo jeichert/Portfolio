@@ -1,10 +1,10 @@
 ---
 title: North Glebe Road
 author: Jeffrey Eichert
+firm: NELSON
 tags:
   - Corporate
   - Interiors
-  - Professional
 image: img/arlington/arlington_1.jpg
 gallery:
   - img/arlington/arlington_1.jpg

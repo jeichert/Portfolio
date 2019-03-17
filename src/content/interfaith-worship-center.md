@@ -3,7 +3,6 @@ title: Interfaith Worship Center
 author: Jeffrey Eichert
 tags:
   - Civic
-  - Educational
 image: img/interfaith/interfaith_0.jpg
 gallery:
   - img/interfaith/interfaith_1.jpg

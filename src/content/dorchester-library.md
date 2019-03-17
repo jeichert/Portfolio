@@ -3,8 +3,6 @@ title: Dorchester Public Library
 author: Jeffrey Eichert
 tags:
   - Civic
-  - Architecture
-  - Education
 image: img/library/library_1.jpg
 gallery:
   - img/library/library_1.jpg

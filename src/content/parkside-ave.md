@@ -4,7 +4,6 @@ title: Parkside Ave
 author: Jeffrey Eichert
 tags:
   - Commercial
-  - Architecture
   - Mixed-Use
 firm: JFA
 image: img/parkside/parkside_1.jpg

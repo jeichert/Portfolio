@@ -3,9 +3,7 @@ title: Wyckoff Ave
 author: Jeffrey Eichert
 firm: JFA
 tags:
-  - Architecture
   - Multi-family
-  - Professional
 image: img/wyckoff/wyckoff_0.jpg
 gallery:
   - img/wyckoff/wyckoff_1.jpg

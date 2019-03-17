@@ -1,10 +1,10 @@
 ---
 title: Edison Drive
 author: Jeffrey Eichert
+firm: NELSON
 tags:
   - Corporate
   - Interiors
-  - Professional
 image: img/alpharetta/alpharetta_1.jpg
 gallery:
   - img/alpharetta/alpharetta_1.jpg

@@ -5,8 +5,6 @@ author: Jeffrey Eichert
 firm: JFA
 tags:
   - Multi-Family
-  - Architecture
-  - Professional
 image: img/starr/starr_1.jpg
 gallery:
   - img/starr/starr_1.jpg
@@ -22,8 +20,9 @@ date: '2015-02-02T23:46:37.121Z'
 draft: false
 ---
 
-# Starr Street
+An infill building in the rapidly developing street in Bushwick, the five-story structure is composed of aluminum panels, gray brick, glass, and wire cables to create a contemporary building that stands out amongst the up and coming developments. The building accomodates 24 residential units, on-site car and bike parking, laundry, gym, and lounge/gameroom.
 
+<!--
 Ghost uses a language called **Markdown** to format text.
 
 When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause.
@@ -83,4 +82,4 @@ If you're writing a piece in parts and you just feel like you need to divide a c
 
 ---
 
-This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the [Advanced Markdown Guide](/advanced-markdown/) - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of [how to use Ghost tags](/using-tags/).
+This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the [Advanced Markdown Guide](/advanced-markdown/) - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of [how to use Ghost tags](/using-tags/). -->

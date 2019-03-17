@@ -5,7 +5,6 @@ author: Jeffrey Eichert
 tags:
   - Design Build
   - Civic
-  - Educational
 image: img/design_build/design build_1.jpg
 gallery:
   - img/design_build/design build_1.jpg
