@@ -6,6 +6,7 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import {css} from '@emotion/core';
 import {Helmet} from 'react-helmet';
+import ImgZoom from 'react-medium-image-zoom';
 
 import AuthorCard from '../components/AuthorCard';
 import Footer from '../components/Footer';
@@ -15,7 +16,6 @@ import PostContent from '../components/PostContent';
 import PostFullFooter from '../components/PostFullFooter';
 import PostFullFooterRight from '../components/PostFullFooterRight';
 import ReadNextCard from '../components/ReadNextCard';
-import Subscribe from '../components/subscribe/Subscribe';
 import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import {colors} from '../styles/colors';
@@ -58,12 +58,15 @@ export const PostFullHeader = styled.header `
 
 const PostFullMeta = styled.section `
   display: flex;
+  flex: 1 1 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: ${colors.midgrey};
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
+  padding-bottom: 2rem;
 
   @media (max-width: 500px) {
     font-size: 1.2rem;
@@ -71,12 +74,10 @@ const PostFullMeta = styled.section `
   }
 `;
 
-const PostFullMetaDate = styled.time `
-  color: ${colors.blue};
-`;
-
 const Tag = styled.span `
   padding: 0 1.5rem;
+  color: black;
+  display: block;
 `;
 
 export const PostFullTitle = styled.h1 `
@@ -109,9 +110,14 @@ const PostFullImage = styled.figure `
   }
 `;
 
-const DateDivider = styled.span `
-  display: inline-block;
-  margin: 0 6px 1px;
+const TagHeader = styled.span `
+display: inline-block;
+color: gray
+
+  @media (max-width: 500px) {
+    display: block;
+    width: 100%;
+  }
 `;
 
 const ReadNextFeed = styled.div `
@@ -145,6 +151,16 @@ interface PageTemplateProps {
             fluid: any;
           };
         };
+        gallery: {
+          childImageSharp: {
+            fluid: any[];
+          };
+        };
+        dates: string;
+        status: string;
+        firm: string;
+        size: string;
+        location: string;
         tags: string[];
         author: {
           id: string;
@@ -192,8 +208,18 @@ export interface PageContext {
         fluid: any;
       };
     };
+    gallery: {
+      childImageSharp: {
+        fluid: any[];
+      };
+    };
     title: string;
     date: string;
+    dates: string;
+    status: string;
+    size: string;
+    location: string;
+    firm: string;
     draft?: boolean;
     tags: string[];
     author: {
@@ -283,11 +309,6 @@ const PageTemplate : React.FunctionComponent < PageTemplateProps > = props => {
             ]}>
               <PostFullHeader>
                 <PostFullMeta>
-                  {/*
-                  <PostFullMetaDate dateTime={post.frontmatter.date}>
-                    {post.frontmatter.userDate}
-                  </PostFullMetaDate>
-                   */}
                   {post
                     .frontmatter
                     .tags
@@ -296,15 +317,55 @@ const PageTemplate : React.FunctionComponent < PageTemplateProps > = props => {
                         <Tag>{element}</Tag>
                       </Link>
                     ))}
-                  {/*
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
-                      {post.frontmatter.tags[0]}
-                    </Link>
-                  )}
-                   */}
                 </PostFullMeta>
-                <PostFullTitle>{post.frontmatter.title}</PostFullTitle>
+                <PostFullTitle
+                  style={{
+                  paddingBottom: '4rem'
+                }}>{post.frontmatter.title}</PostFullTitle>
+                <PostFullMeta>
+                  {post.frontmatter.location && (
+                    <div>
+                      <TagHeader>Location</TagHeader>
+                      <Tag style={{
+                        color: 'black'
+                      }}>
+                        {post.frontmatter.location}</Tag>
+                    </div>
+                  )}
+                  {post.frontmatter.dates && (
+                    <div>
+                      <TagHeader>Dates</TagHeader>
+                      <Tag>
+                        {post.frontmatter.dates}</Tag>
+                    </div>
+                  )}
+                  {post.frontmatter.size && (
+                    <div>
+                      <TagHeader>Size</TagHeader>
+                      <Tag>{post.frontmatter.size}</Tag>
+                    </div>
+                  )}
+                </PostFullMeta>
+                <PostFullMeta>
+                  {post.frontmatter.status && (
+                    <div>
+                      <TagHeader>Status</TagHeader>
+                      <Tag style={{
+                        color: 'black'
+                      }}>
+                        {post.frontmatter.status}</Tag>
+                    </div>
+                  )}
+                  {post.frontmatter.firm && (
+                    <div>
+                      <TagHeader>Firm</TagHeader>
+                      <Tag>
+                        {post.frontmatter.firm}</Tag>
+                    </div>
+                  )}
+
+                </PostFullMeta>
+                <PostFullMeta></PostFullMeta>
               </PostFullHeader>
 
               {(post.frontmatter.image && post.frontmatter.image.childImageSharp) && (
@@ -316,9 +377,21 @@ const PageTemplate : React.FunctionComponent < PageTemplateProps > = props => {
                     fluid={post.frontmatter.image.childImageSharp.fluid}/>
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst}/> {/* The big email subscribe modal content */}
-              {config.showSubscribe && <Subscribe title={config.title}/>}
-
+              <PostContent htmlAst={post.htmlAst}/>
+              <div>
+                {post
+                  .frontmatter
+                  .gallery
+                  .map((e, i) => (<ImgZoom
+                    key={i}
+                    image={{
+                    src: e.childImageSharp.fluid.src,
+                    style: {
+                      width: '100%',
+                      paddingBottom: '2rem'
+                    }
+                  }}/>))}
+              </div>
               <PostFullFooter>
                 <AuthorCard author={post.frontmatter.author}/>
                 <PostFullFooterRight authorId={post.frontmatter.author.id}/>
@@ -374,7 +447,19 @@ export const query = graphql `
             }
           }
         }
-      author {
+        gallery {
+          childImageSharp {
+            fluid(maxWidth: 3720) {
+              ...GatsbyImageSharpFluid
+            }
+          } 
+        }
+        location
+        size
+        firm
+        dates
+        status
+        author {
           id
           bio
           avatar {

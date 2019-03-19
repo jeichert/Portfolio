@@ -3,6 +3,10 @@ layout: post
 title: New York Ave
 firm: JFA
 image: img/new_york/new york_1.jpg
+dates: 2017-Present
+location: Brooklyn, NY
+size: 42,907 SF
+status: Under Construction
 gallery:
   - img/new_york/new york_1.jpg
   - img/new_york/new york_2.jpg
@@ -16,7 +20,7 @@ gallery:
   - img/new_york/new york_10.jpg
   - img/new_york/new york_11.jpg
 author: Jeffrey Eichert
-date: 2019-03-10T10:00:00.000Z
+date: 2017-03-10T10:00:00.000Z
 tags:
   - Mixed-Use
   - Multi-family

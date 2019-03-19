@@ -3,6 +3,10 @@ layout: post
 title: Broadway
 firm: JFA
 author: Jeffrey Eichert
+location: Brooklyn, NY
+dates: 2016-Present
+status: Under Construction
+size: 64,426 SF
 tags:
   - Mixed-Use
   - Multi-family
@@ -14,7 +18,7 @@ gallery:
   - img/broadway/broadway_3.jpg
   - img/broadway/broadway_4.jpg
   - img/broadway/broadway_5.jpg
-date: '2018-05-06T23:46:37.121Z'
+date: 2016-05-06T23:46:37.121Z
 draft: false
 ---
 

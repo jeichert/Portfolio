@@ -2,6 +2,10 @@
 title: North Glebe Road
 author: Jeffrey Eichert
 firm: NELSON
+location: Arlington, VA
+size: 105,000 SF
+status: Under Construction
+dates: 2018-Present
 tags:
   - Corporate
   - Interiors
@@ -13,7 +17,7 @@ gallery:
   - img/arlington/arlington_4.jpg
   - img/arlington/arlington_5.jpg
   - img/arlington/arlington_6.jpg
-date: '1863-11-19T10:00:00.000Z'
+date: 2019-01-19T10:00:00.000Z
 draft: false
 ---
 

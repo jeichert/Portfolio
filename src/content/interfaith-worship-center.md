@@ -1,6 +1,8 @@
 ---
 title: Interfaith Worship Center
 author: Jeffrey Eichert
+dates: Spring 2014
+status: Design Proposal
 tags:
   - Civic
 image: img/interfaith/interfaith_0.jpg
@@ -14,7 +16,7 @@ gallery:
   - img/interfaith/interfaith_7.jpg
   - img/interfaith/interfaith_8.jpg
   - img/interfaith/interfaith_9.jpg
-date: '1863-11-19T10:00:00.000Z'
+date: 2014-05-19T10:00:00.000Z
 draft: false
 ---
 

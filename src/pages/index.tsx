@@ -132,6 +132,7 @@ const IndexPage : React.FunctionComponent < IndexProps > = props => {
             <SiteNav isHome={true}/>
           </div>
         </header>
+
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed, PostFeedRaise]}>
@@ -143,6 +144,7 @@ const IndexPage : React.FunctionComponent < IndexProps > = props => {
                   // filter out drafts in production
                   return ((post.node.frontmatter.draft !== true || process.env.NODE_ENV !== 'production') && (<PostCard key={post.node.fields.slug} post={post.node}/>));
                 })}
+
             </div>
           </div>
         </main>
@@ -189,13 +191,6 @@ export const pageQuery = graphql `
             tags
             draft
             image {
-              childImageSharp {
-                fluid(maxWidth: 3720) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            gallery {
               childImageSharp {
                 fluid(maxWidth: 3720) {
                   ...GatsbyImageSharpFluid

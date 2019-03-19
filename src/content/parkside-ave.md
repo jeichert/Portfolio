@@ -6,6 +6,10 @@ tags:
   - Commercial
   - Mixed-Use
 firm: JFA
+location: Brooklyn, NY
+size: 44,818 SF
+dates: 2015-Present
+status: Built
 image: img/parkside/parkside_1.jpg
 gallery:
   - img/parkside/parkside_1.jpg
@@ -13,7 +17,7 @@ gallery:
   - img/parkside/parkside_3.jpg
   - img/parkside/parkside_4.jpg
   - img/parkside/parkside_5.jpg
-date: '2012-08-20T15:11:55.000Z'
+date: 2015-08-20T15:11:55.000Z
 draft: false
 ---
 

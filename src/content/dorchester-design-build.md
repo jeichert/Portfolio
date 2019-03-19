@@ -2,6 +2,9 @@
 layout: post
 title: Community Design Build
 author: Jeffrey Eichert
+location: Dorchester, MA
+status: Design Build
+dates: Summer 2013
 tags:
   - Design Build
   - Civic
@@ -23,7 +26,7 @@ gallery:
   - img/design_build/design build_14.jpg
   - img/design_build/design build_15.jpg
   - img/design_build/design build_16.jpg
-date: '2018-05-06T23:46:37.121Z'
+date: '2013-08-06T23:46:37.121Z'
 draft: false
 ---
 

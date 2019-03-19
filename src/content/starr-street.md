@@ -3,6 +3,9 @@ layout: post
 title: Starr Street
 author: Jeffrey Eichert
 firm: JFA
+dates: 2015-2018
+status: Built
+size: 23,762 SF
 tags:
   - Multi-Family
 image: img/starr/starr_1.jpg
@@ -16,7 +19,7 @@ gallery:
   - img/starr/starr_7.jpg
   - img/starr/starr_8.jpg
   - img/starr/starr_9.jpg
-date: '2015-02-02T23:46:37.121Z'
+date: 2016-02-02T23:46:37.121Z
 draft: false
 ---
 
