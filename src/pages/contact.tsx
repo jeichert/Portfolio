@@ -7,6 +7,7 @@ import {css} from '@emotion/core';
 
 import {PostFullHeader, PostFullTitle, NoImage, PostFull} from '../templates/post';
 import {PostFullContent} from '../components/PostContent';
+import {colors} from '../styles/colors';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
 
@@ -15,6 +16,97 @@ const PageTemplate = css `
     background: #fff;
     padding-bottom: 4vw;
   }
+
+  form {
+    width: 100%;
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      padding: 1.5rem;
+
+
+      li {
+        float: right;
+
+        .special {
+          border: 1px solid ${colors.whitegrey};
+          height: 5rem;
+          background: ${colors.whitegrey};
+        }
+      }
+    }
+  }
+
+  .field {
+    margin: 0 auto;
+    padding: 1.5rem;
+    
+    &.half {
+      width: 50%;
+      float: left;
+      
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      &.first {
+        padding-right: 1.5rem;
+      }
+    }
+
+    label {
+      width: 25%;
+      display: block;
+      padding-right: 4rem;
+      text-transform: uppercase;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="url"],
+    select,
+    textarea {
+      background: ${colors.whitegrey};
+      border: none;
+      border-radius: 0;
+      color: inherit;
+      display: block;
+      outline: 0;
+      padding: 0 1em;
+      text-decoration: none;
+      width: 100%;
+      font-size: 2rem;
+
+      &:invalid {
+        box-shadow: none;
+      }
+
+      &:focus {
+        border-color: ${colors.lightgrey};
+        box-shadow: 0 0 0 2px ${colors.lightgrey};
+        border: 1px;
+      }
+    }
+
+    textarea {
+      padding: 0.75em 1em;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"], {
+      display: block;
+      float: left;
+      margin-right: -2em;
+      opacity: 0;
+      width: 1em;
+      z-index: -1;
+    }
 `;
 
 const Contact : React.FunctionComponent = () => (
@@ -55,7 +147,6 @@ const Contact : React.FunctionComponent = () => (
               </div>
               <ul className="actions">
                 <li><input type="submit" value="Send Message" className="special"/></li>
-                <li><input type="reset" value="Clear"/></li>
               </ul>
             </form>
           </PostFullContent>

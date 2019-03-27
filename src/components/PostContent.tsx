@@ -10,8 +10,7 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 70px 100px 0;
   min-height: 230px;
-  font-family: Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   display: flex;
   line-height: 1.6em;
   background: #fff;
@@ -346,7 +345,6 @@ export const PostFullContent = styled.section`
   }
 
   @media (max-width: 500px) {
-    padding: 0;
     :before {
       display: none;
     }

@@ -1,17 +1,16 @@
 import {graphql} from 'gatsby';
-import IndexLayout from '../layouts';
-import Wrapper from '../components/Wrapper';
-import SiteNav from '../components/header/SiteNav';
-import {SiteHeader, outer, inner, SiteMain} from '../styles/shared';
 import * as React from 'react';
 import {css} from '@emotion/core';
+import Helmet from 'react-helmet';
 // import {AuthorProfileImage} from '../styles/shared'
-import Img from 'gatsby'
 
 import {NoImage, PostFull} from '../templates/post';
 import {PostFullContent} from '../components/PostContent';
 import Footer from '../components/Footer';
-import Helmet from 'react-helmet';
+import IndexLayout from '../layouts';
+import Wrapper from '../components/Wrapper';
+import SiteNav from '../components/header/SiteNav';
+import {SiteHeader, outer, inner, SiteMain} from '../styles/shared';
 
 const PageTemplate = css `
   .site-main {
@@ -20,7 +19,23 @@ const PageTemplate = css `
   }
 `;
 
+const MainWrapper = css `
+  @media (min-width: 700px) {
+    display: flex;
+  }
+`;
+const DescriptionWrapper = css ` 
+  flex-grow: 1;
+  padding: 1.5rem;
+`;
 
+const PostImage = css `
+  min-width: 50%;
+`;
+
+const Description = css `
+  font-size: 1.5rem;
+`;
 
 interface AuthorTemplateProps {
   pathContext : {
@@ -54,7 +69,6 @@ interface AuthorTemplateProps {
       };
     };
   };
-
 }
 
 const About : React.FunctionComponent < AuthorTemplateProps > = props => {
@@ -65,8 +79,12 @@ const About : React.FunctionComponent < AuthorTemplateProps > = props => {
     min-height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
+
     background-position: center center;
-    width: 100%;
+    
+    @media (min-width: 700px) {
+      min-width: 50%;
+    }
   `
   return (
     <IndexLayout>
@@ -82,21 +100,25 @@ const About : React.FunctionComponent < AuthorTemplateProps > = props => {
         <main
           id="site-main"
           className="site-main"
-          css={[SiteMain, outer]}
+          css={[SiteMain, outer, MainWrapper]}
           style={{
-          padding: '0',
           minHeight: '90vh',
-          display: 'flex',
-          alignItems: 'center'
+          alignItems: 'center',
         }}>
           {author.profile_image && (
-            <article className="post page" css={[PostFull, NoImage]} style={{width: '50%'}}>
+            <article className="post page" css={[PostFull, NoImage, PostImage]}>
               <div css={AuthorImage}></div>
             </article>
           )}
-          <PostFullContent className="post-full-content" style={{maxWidth: '50%'}}>
+          <PostFullContent className="post-full-content" css={DescriptionWrapper}>
             <div className="post-content">
-              <p>I am a registered architect in the State of New York with experience on both ground up multi-family, mixed use and commercial buildings, as well as corporate interiors and retail branches.</p>
+              <p>Hello, I’m <strong>Jeff Eichert</strong>, a registered architect in the state of New York. 
+              Find me on <a href="https://instagram.com/jeichert" target="_blank">Instagram</a>, <a href="https://archinect.com/jeffreyeichert" target="_blank">Archinect</a>, <a href="https://www.linkedin.com/in/jeffreyeichert/" target="_blank">LinkedIn</a>, <a href="https://www.facebook.com/jeffrey.eichert" target="_blank">Facebook</a>.
+              </p>
+              <p css={Description}>
+              I have experience in both ground up multi-family, mixed use and commercial buildings, 
+              as well as corporate interiors and retail branches. Feel free to reach out to me anywhere, or download my <a href="https://www.dropbox.com/s/hi49dlaxt1gg115/J%20Eichert_Resume_2019.pdf?dl=0" target="_blank">resume</a>.
+              </p>
             </div>
           </PostFullContent>
         </main>

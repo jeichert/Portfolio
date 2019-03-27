@@ -1048,6 +1048,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-medium-image-zoom@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-medium-image-zoom/-/react-medium-image-zoom-3.0.0.tgz#b9b9fbad410039662a5d7ff16bf79108c4d7d69c"
+  integrity sha512-uSl8ab25zjbhjAJXGPl+dkKLOW67uxbC3oPBdE89Y1JaasfSGP0vtWbwHTBKCZ/eawxMe109Nhm/WYWvDc6k3Q==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "16.8.8"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.8.tgz#4b60a469fd2469f7aa6eaa0f8cfbc51f6d76e662"
