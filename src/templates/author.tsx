@@ -155,12 +155,7 @@ const Author : React.FunctionComponent < AuthorTemplateProps > = props => {
       <Wrapper>
         <header
           className="no-cover"
-          css={[outer, SiteHeader]}
-          style={{
-          backgroundImage: author.profile_image
-            ? `url(${author.profile_image.childImageSharp.fluid.src})`
-            : ''
-        }}>
+          css={[outer, SiteHeader]}>
           <div css={inner}>
             <SiteNav isHome={false}/>
             <SiteHeaderContent>
@@ -178,9 +173,9 @@ const Author : React.FunctionComponent < AuthorTemplateProps > = props => {
                   </div>
                 )}
                 <div css={HiddenMobile}>
-                  {totalCount > 1 && `${totalCount} posts`}
-                  {totalCount === 1 && `1 post`}
-                  {totalCount === 0 && `No posts`}
+                  {totalCount > 1 && `${totalCount} projects`}
+                  {totalCount === 1 && `1 project`}
+                  {totalCount === 0 && `No projects`}
                   <Bull>•</Bull>
                 </div>
                 {author.website && (

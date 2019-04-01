@@ -114,10 +114,11 @@ const About : React.FunctionComponent < AuthorTemplateProps > = props => {
             <div className="post-content">
               <p>Hello, I’m <strong>Jeff Eichert</strong>, a registered architect in the state of New York. 
               Find me on <a href="https://instagram.com/jeichert" target="_blank">Instagram</a>, <a href="https://archinect.com/jeffreyeichert" target="_blank">Archinect</a>, <a href="https://www.linkedin.com/in/jeffreyeichert/" target="_blank">LinkedIn</a>, <a href="https://www.facebook.com/jeffrey.eichert" target="_blank">Facebook</a>.
+              Shoot me an <a href="mailto://jeffrey.eichert@gmail.com">email</a> as well if you'd like to get in touch. 
               </p>
               <p css={Description}>
-              I have experience in both ground up multi-family, mixed use and commercial buildings, 
-              as well as corporate interiors and retail branches. Feel free to reach out to me anywhere, or download my <a href="https://www.dropbox.com/s/hi49dlaxt1gg115/J%20Eichert_Resume_2019.pdf?dl=0" target="_blank">resume</a>.
+              I have experience in both ground up multi-family, mixed-use and commercial buildings, 
+              as well as corporate interiors/workplace. Feel free to reach out, or download my <a href="https://www.dropbox.com/s/hi49dlaxt1gg115/J%20Eichert_Resume_2019.pdf?dl=0" target="_blank">resume</a> for some more information about me.
               </p>
             </div>
           </PostFullContent>

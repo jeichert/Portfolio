@@ -85,7 +85,6 @@ const Footer : React.FunctionComponent = () => {
               Archinect
             </a>
           )}
-          <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>
     </footer>

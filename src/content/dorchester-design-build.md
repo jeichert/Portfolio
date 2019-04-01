@@ -30,7 +30,7 @@ date: '2013-08-06T23:46:37.121Z'
 draft: false
 ---
 
-The project for this class was to design and build a new entry court and identity for Up Academy in Fields Corner, Dorchester. Up Academy transitioned from a traditional Boston Public School (The John Marshall School) to a Charter School. They asked us to re-envision the main entry and most visible public face of the school. Our project reflected the transformative nature of the change from The Marshall to Up Academy, and promoted a positive, welcoming environment for students coming to school.
+The objective for this class was to design and build a new entry court and identity for Up Academy in Fields Corner, Dorchester. Up Academy transitioned from a traditional Boston Public School (The John Marshall School) to a Charter School. They asked us to re-envision the main entry and most visible public face of the school. Our project reflected the transformative nature of the change from The Marshall to Up Academy, and promoted a positive, welcoming environment for students coming to school.
 
 The project will occupy an area of land located between the front of the school building and the sidewalk on Westville St. It was paved with asphalt, and was used mostly for parking. The parents and teachers of Up Academy used words like “welcoming,” “exciting,” and “inviting,” to describe what they would like to see in the space, but they did not have specific program requests (such as seating, fencing, shelter, etc.). The ambiguity gave us wide latitude in our design, but required that we listen extremely closely to the wishes and desires of our client group when we met with them. A less specific program makes the task of meeting a client’s expectations more difficult rather than less.
 

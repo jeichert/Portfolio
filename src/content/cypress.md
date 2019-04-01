@@ -18,10 +18,7 @@ gallery:
 author: Jeffrey Eichert
 date: 2018-03-10T10:00:00.000Z
 tags:
-  - Mixed-Use
   - Multi-family
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat orci dui, id rhoncus dui molestie tempus. Suspendisse eleifend mauris ipsum, sit amet hendrerit ligula convallis ut. Nulla molestie ex sem, eget lobortis magna porttitor quis. Nullam luctus mi sed interdum placerat. Nam tempor, tellus quis finibus ultricies, turpis mauris fermentum sem, tincidunt venenatis ex elit in neque. Nam vitae accumsan odio. Nam elementum massa ac cursus facilisis. Etiam vel dui in justo facilisis vulputate. Ut ac est quis enim facilisis scelerisque. Morbi eget lorem blandit, blandit urna nec, luctus purus. Donec venenatis velit tellus, in gravida sem eleifend sit amet. Etiam bibendum nunc et erat sagittis, vehicula ullamcorper turpis fringilla.
-
-Nam sed molestie leo. Duis in pulvinar tortor. Suspendisse in fermentum urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam convallis condimentum elit eget posuere. Donec a dui mi. Maecenas at ante neque. Praesent consectetur massa dui, eu accumsan ante consectetur ac. Etiam scelerisque lacinia nibh, id luctus mauris bibendum ac. Phasellus hendrerit justo a velit maximus, nec sagittis libero bibendum. Nam non mauris enim. In lacinia neque lacus, et euismod leo facilisis vel. Sed ultricies enim feugiat, sollicitudin felis ac, ornare neque. Donec venenatis, lacus dictum gravida tincidunt, lectus velit interdum ipsum, ac tristique eros neque vel nisi. Vivamus sodales mauris at tortor volutpat blandit vitae a nisi.
+A multi-family project located in Mott Haven, Bronx, this building features 41 dwelling units, and amenities over 33,868 SF. The project was built in an accelerated timeline project in which the client tasked us with devising plans for the upper floors while the foundation was under construction. The upper floor and accessible rooftop featured amenity space for the tenants including a gym, and lounge. 

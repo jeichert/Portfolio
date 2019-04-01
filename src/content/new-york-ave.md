@@ -26,4 +26,4 @@ tags:
   - Multi-family
 ---
 
-Located on the border of Prospect Lefferts Garden and East Flatbush, this mixed-used building contains a ground floor community facility space and 39 dwelling units over 42,907 SF. The buildings amenities include laundry, 1,000 SF of recreation space, split between a gym and a lounge, as well as ample public outdoor terrace space. The buildings exterior is timeless with it's gray brick, metal panel, and large glass windows, while it's interior boasts a warm, welcoming palette with solid wood, gold accents, and deep blue paint and wallpapers throughout.
+Located on the border of Prospect Lefferts Garden and East Flatbush, this mixed-used building contains a ground floor community facility space and 39 dwelling units over 42,907 SF. The buildings amenities include laundry, 1,000 SF of recreation space, split between a gym and a lounge, as well as ample public outdoor terrace space. The buildings exterior is timeless with it's gray brick, metal panel, and large glass windows, while it's interior boasts a warm, welcoming palette with wood, gold accents, deep blue walls, and patterned wall coverings throughout.

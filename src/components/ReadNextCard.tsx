@@ -189,15 +189,11 @@ const ReadNextCard: React.FunctionComponent<ReadNextProps> = props => {
       render={({ header }: ReadNextQuery) => (
         <ReadNextCardStyles coverImage={header.childImageSharp.fluid.src}>
           <ReadNextCardHeader>
-            <ReadNextCardHeaderSitetitle>
-              &mdash; {config.title} &mdash;
-            </ReadNextCardHeaderSitetitle>
             <ReadNextCardHeaderTitle>
               <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>{props.tags[0]}</Link>
             </ReadNextCardHeaderTitle>
           </ReadNextCardHeader>
           <ReadNextDivider>
-            <InfinityIcon />
           </ReadNextDivider>
           <ReadNextCardContent>
             <ul>

@@ -12,7 +12,6 @@ image: img/wyckoff/wyckoff_0.jpg
 gallery:
   - img/wyckoff/wyckoff_0.jpg
   - img/wyckoff/wyckoff_1.jpg
-  - img/wyckoff/wyckoff_2.jpg
   - img/wyckoff/wyckoff_3.jpg
   - img/wyckoff/wyckoff_4.jpg
   - img/wyckoff/wyckoff_5.jpg

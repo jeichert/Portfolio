@@ -59,7 +59,7 @@ export const SocialLink = css `
   align-items: center;
   margin: 0;
   padding: 10px;
-  color: #fff;
+  color: #000;
   opacity: 0.8;
 
   :hover {
@@ -68,7 +68,7 @@ export const SocialLink = css `
 
   svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: #000;
   }
 `;
 
